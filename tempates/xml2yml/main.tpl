@@ -18,8 +18,6 @@
 		</offers>
 	</shop>
 </yml_catalog>
-
-
 {* ================================== *}
 {* 
 	Описание формата YML https://yandex.ru/support/partnermarket/export/yml.html#yml_example  

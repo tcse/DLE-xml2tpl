@@ -2,34 +2,20 @@
    <url>{full-link}</url>
    <picture>{image-1}</picture>
 
-   <price>70000</price>
-   <currencyId>EUR</currencyId>
+   [xfgiven_xml2tpl_price]<price>[xfvalue_xml2tpl_price]</price>[xfgiven_xml2tpl_price]
+   [xfgiven_xml2tpl_currencyid]<currencyId>[xfvalue_xml2tpl_currencyid]</currencyId>[xfgiven_xml2tpl_currencyid]
 
    [catlist=3]<categoryId>3</categoryId>[/catlist]
 
-   <vendor></vendor>
-	[xfgiven_sku]<vendorCode>[xfvalue_sku]</vendorCode>[/xfgiven_sku]
-	
+   [xfgiven_xml2tpl_vendor]<vendor>[xfvalue_xml2tpl_vendor]</vendor>[/xfgiven_xml2tpl_vendor]
+   [xfnotgiven_xml2tpl_vendor]<vendor>{category}</vendor>[/xfnotgiven_xml2tpl_vendor]
+   
+	[xfgiven_xml2tpl_vendorcode]<vendorCode>[xfvalue_xml2tpl_vendorcode]</vendorCode>[/xfgiven_xml2tpl_vendorcode]
+
    <name>{title}</name>
 	<description><![CDATA[{short-story limit="1000"}]]></description>
 
-	[xfgiven_technicaldata-normal]<param name="Технические характеристики">
-		<![CDATA[[xfvalue_technicaldata-normal limit="1000"]]]>
-	</param>[/xfgiven_technicaldata-normal]
-	[xfgiven_axlegroup-normal]<param name="Система подвески и торможения">
-		<![CDATA[[xfvalue_axlegroup-normal limit="1000"]]]>
-	</param>[/xfgiven_axlegroup-normal]
-	[xfgiven_tyres-normal]<param name="Шины и диски">
-		<![CDATA[[xfvalue_tyres-normal limit="1000"]]]>
-	</param>[/xfgiven_tyres-normal]
-	[xfgiven_body-normal]<param name="Кузов прицепа">
-		<![CDATA[[xfvalue_body-normal limit="1000"]]]>
-	</param>[/xfgiven_body-normal]
-	[xfgiven_accessories-normal]<param name="Аксессуары">
-		<![CDATA[[xfvalue_accessories-normal limit="1000"]]]>
-	</param>[/xfgiven_accessories-normal]
-
-	<store>true</store>
-	<pickup>true</pickup>
-	<delivery>true</delivery>
+	<store>true</store> {* Возможность купить товар без предварительного заказа. *}
+	<pickup>false</pickup> {* Возможность самовывоза из пунктов выдачи (во всех регионах, в которые доставляет магазин). *}
+	<delivery>true</delivery> {* Возможность курьерской доставки (по всем регионам, в которые доставляет магазин). *}
 </offer>
