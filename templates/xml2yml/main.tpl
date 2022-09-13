@@ -11,10 +11,10 @@
 			<currency id="RUR" rate="1"/>
 		</currencies>
 		<categories>
-			{catmenu id="3" subcat="only" template="custom/yml/categories" cache="no"}
+			{catmenu id="21" subcat="no" template="categories" cache="no"}
 		</categories>
 		<offers>
-			{custom category="3" template="custom" available="global"  limit="500" order="reads" sort="desc" cache="no"}
+			{custom category="21" template="custom" available="global"  limit="500" order="reads" sort="desc" cache="no"}
 		</offers>
 	</shop>
 </yml_catalog>
