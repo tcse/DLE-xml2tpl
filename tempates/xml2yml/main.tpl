@@ -14,7 +14,16 @@
 			{catmenu id="3" subcat="only" template="custom/yml/categories" cache="no"}
 		</categories>
 		<offers>
-			{custom category="3,4,5,6,7,8,10,12,13" template="custom" available="global"  limit="500" order="reads" sort="desc" cache="no"}
+			{custom category="3" template="custom" available="global"  limit="500" order="reads" sort="desc" cache="no"}
 		</offers>
 	</shop>
 </yml_catalog>
+
+
+{* ================================== *}
+{* 
+	Описание формата YML https://yandex.ru/support/partnermarket/export/yml.html#yml_example  
+	Элементы, входящие в shop https://yandex.ru/support/partnermarket/elements/shop.html 
+	Все элементы, входящие в offer в упрощенном типе. Форматы YML https://yandex.ru/support/partnermarket/offers.html 
+*}
+{* ================================== *}
